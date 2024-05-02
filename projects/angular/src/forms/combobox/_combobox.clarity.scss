@@ -62,6 +62,7 @@
     .clr-input {
       padding: 0;
       max-height: tokens.$cds-global-space-7;
+      width: 100%;
 
       &:not(:disabled) {
         color: combobox-variables.$clr-combobox-text-color;
@@ -77,6 +78,8 @@
 
     //Mixins
     @include styles-mixins.form-fields-appearance();
+
+    display: block;
 
     // override the above mixin for combobox-specific styles
     background-color: combobox-variables.$clr-combobox-input-background-color;
